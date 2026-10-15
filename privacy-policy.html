@@ -18,18 +18,19 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 9 October 2026</p>
+  <p class="updated">Last updated: 15 October 2026</p>
 
   <p>Editify ("we", "our", "the app") is an offline PDF editor for iOS. We have built Editify with privacy as a foundation. This policy explains, plainly, what we do and do not collect.</p>
 
   <div class="notice">
-    <strong>Short version:</strong> Editify processes all your documents on your device. We do not have servers. We do not collect, store, transmit, or sell your files or personal data.
+    <strong>Short version:</strong> Editify processes all your documents on your device, including Ask the Document, which uses Apple Intelligence's on-device model. We do not have servers. We do not collect, store, transmit, or sell your files or personal data.
   </div>
 
   <h2>1. Information We Do Not Collect</h2>
   <p>We do not collect, see, or have access to:</p>
   <ul>
     <li>The contents of any PDF, image, document, or scan you open or create with Editify.</li>
+    <li>The questions you ask a document with Ask the Document, or the summaries and answers it writes.</li>
     <li>Your name, email address, phone number, or location (unless you contact us directly by email).</li>
     <li>Your browsing or in-app activity, screen recordings, or behavioral analytics.</li>
     <li>Device identifiers used for advertising (IDFA), or any other tracking identifiers.</li>
@@ -42,8 +43,18 @@
     <li><strong>Your documents:</strong> PDFs, images, scans, and other files imported or created in Editify are stored in the app's local document directory or in folders you choose via the iOS Files app.</li>
     <li><strong>App preferences:</strong> theme, language, recently opened files, favorites — saved in standard iOS UserDefaults.</li>
     <li><strong>Export count for the rating prompt:</strong> a simple number of completed exports, used only to decide when to show Apple's standard rating request. Stored only in UserDefaults.</li>
+    <li><strong>Signing certificates:</strong> if you sign with your own certificate (.p12/.pfx), the certificate and its private key are imported into the app's keychain on your device and used only to sign the documents you choose.</li>
   </ul>
   <p>None of this data leaves your device. If you uninstall Editify, this data is removed by iOS.</p>
+
+  <h3>Ask the Document (Apple Intelligence)</h3>
+  <p>When you use Ask the Document, the document's text is summarized and your questions are answered by Apple Intelligence's on-device language model on your iPhone or iPad. The document text, your questions and the answers are not sent to us, to Apple's Private Cloud Compute or to any other server, and Editify does not keep them after you close the screen. Ask the Document is available only on devices that support Apple Intelligence, with Apple Intelligence turned on.</p>
+
+  <h3>Spotlight</h3>
+  <p>Editify adds the PDFs in its library to your device's Spotlight index so you can find them from Search: the file name, the page count, a small image of the first page, and up to the first 20,000 characters of text. Password-protected PDFs are added without their text or page image. This index stays on your device. You can turn it off in Editify under Settings → Privacy → Show Documents in Spotlight; Editify then removes its entries from the index.</p>
+
+  <h3>Widgets and Control Center</h3>
+  <p>Editify's widgets and Control Center control only open a tool or the camera scanner. They do not show or read your documents.</p>
 
   <h2>3. Permissions We Request</h2>
   <p>Editify only asks for the permissions it needs to perform a task you initiate:</p>
@@ -55,7 +66,7 @@
   <p>You can revoke any permission at any time in iOS Settings → Editify.</p>
 
   <h2>4. In-App Purchases</h2>
-  <p>Editify offers optional premium subscriptions and a one-time lifetime purchase, processed by Apple through StoreKit. Apple — not Editify — handles all payment information, billing, and renewals. We only receive an anonymous status flag that indicates whether your account currently has an active subscription. We do not see your Apple ID, payment method, or transaction history.</p>
+  <p>Editify offers optional premium subscriptions and a one-time lifetime purchase, processed by Apple through StoreKit. Apple — not Editify — handles all payment information, billing, and renewals. The app checks on your device, through StoreKit, whether you have an active subscription or lifetime purchase. Editify has no server and receives no purchase records about you; like every App Store developer, we see only the sales reports Apple provides, which do not identify you. We never see your Apple Account or payment method.</p>
   <p>For Apple's handling of your payment data, see <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>.</p>
 
   <h2>5. Network Activity</h2>
@@ -63,10 +74,9 @@
   <ul>
     <li>When you use the "Web Page to PDF" feature and provide a URL — we load that URL in a local WKWebView to render the page.</li>
     <li>When you tap a link in this Privacy Policy, the Terms, or the in-app paywall — the iOS system opens that link in your default browser.</li>
-    <li>When StoreKit communicates with the App Store for subscription validation (handled by iOS).</li>
-    <li>If you choose to use a TSA (Time Stamping Authority) for digital signatures — your device sends a cryptographic hash of the signature (not the PDF itself) to the TSA server you select.</li>
+    <li>When StoreKit communicates with the App Store for purchases, restores and subscription status (handled by iOS).</li>
   </ul>
-  <p>No telemetry, no background uploads.</p>
+  <p>Ask the Document, Spotlight, text recognition and certificate signing work without the network. Certificate signatures are added without contacting a timestamp server. No telemetry, no background uploads.</p>
 
   <h2>6. Children's Privacy</h2>
   <p>Editify is not directed to children under 13 and does not knowingly collect any information from them. The app is rated 4+ in the App Store and contains no advertising or social features.</p>
